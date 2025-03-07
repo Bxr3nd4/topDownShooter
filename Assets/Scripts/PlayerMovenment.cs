@@ -1,4 +1,5 @@
 
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovenment : MonoBehaviour
@@ -22,6 +23,8 @@ public class PlayerMovenment : MonoBehaviour
         ProcessInputs();
         Flip();
         animator.SetFloat("Speed",input.magnitude);
+        
+       
     }
 
     private void ProcessInputs()
